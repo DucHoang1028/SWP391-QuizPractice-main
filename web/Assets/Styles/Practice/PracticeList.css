@@ -1,0 +1,270 @@
+/* Body styles */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main content area styles */
+.main-content {
+    background-color: white;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Light box shadow */
+    margin-top: 0px;
+    position: relative;
+    clear: both; /* Ensure it starts below the header */
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+}
+.title {
+    font-size: 32px;
+    font-weight: 500;
+    color: #1d2026; /* Dark gray text color */
+    margin-bottom: 10px; /* Adjusted for tighter spacing */
+    text-align: center; /* Center the title */
+}
+.filter-sort-area select{
+    width: 250px;
+}
+.filter-sort-area {
+    display: flex;
+    flex-direction: column; /* Stack filter and sort vertically */
+    align-items: start; /* Center align the controls */
+
+}
+
+.filter-by {
+    display: flex;
+    margin-bottom: 10px; /* Space between filter and sort sections */
+}
+.sort-by {
+    gap: 10px;
+    margin-bottom: 10px; /* Space between filter and sort sections */
+
+}
+.sort-by label {
+    padding-right:5px;
+}
+.controls {
+    display: flex;
+    justify-content: center; /* Center the buttons horizontally */
+    margin-top: 20px; /* Space from filter/sort to buttons */
+}
+
+.actions {
+    gap: 20px; /* Space between buttons and search */
+}
+/* Controls section in the header */
+.filter-by, .sort-by {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: 20px; /* Optional: Adjust this as needed for alignment */
+}
+
+.filter-sort-column {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* This ensures elements spread across the header */
+    margin-top: 20px; /* Adds space between title and filter/sort sections */
+}
+
+.controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px; /* Additional spacing from sorting controls */
+}
+
+.filter-by label, .sort-by label {
+    font-size: 16px;
+}
+
+.filter-by select, .sort-by select {
+    padding: 10px;
+    font-size: 14px;
+}
+
+/* Action buttons styles */
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.btn {
+    background-color: #ff5722; /* Bright orange background */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+.btn:hover  {
+    background-color: darkorange;
+}
+
+/* Search input styles */
+.search-input {
+    padding: 15px;
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 10px;
+    font-size: 16px;
+    width: 200px;
+}
+
+/* Practice list table styles */
+.practice-list {
+    border: 1px solid #000; /* Black border */
+    overflow: hidden;
+    position: relative;
+    border-radius: 0;
+    margin-top: 0; /* Remove the extra space above the table */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f4f4f4; /* Light gray background for header */
+    border: 2px solid #000; /* Black border */
+    background: #FFF;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #000; /* Black bottom border */
+    font-size: 18px;
+}
+
+/* Practice item card styles */
+
+.practice-item {
+    background-color: #fff;
+    position: relative;
+    padding-top: 20px; /* Adjust padding to compensate for the shadow */
+    border-bottom: 1px solid #000; /* Black bottom border */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.practice-item:hover {
+  background-color: #eee;
+}
+.practice-title p {
+    margin: 10px 0;
+}
+
+.subject-name {
+    color: #000; /* Black text */
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 200% */
+    letter-spacing: -0.192px;
+    text-transform: capitalize;
+}
+
+.exam-name {
+    color: #000; /* Black text */
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px; /* 200% */
+    letter-spacing: -0.192px;
+    text-transform: capitalize;
+}
+
+.test-type, .keyword {
+    color: #000; /* Black text */
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 48px; /* 200% */
+    letter-spacing: -0.192px;
+    text-transform: capitalize;
+}
+
+/* Ensure the content is aligned in the same column */
+.practice-title, .exam-info, .question-info, .correct-info, .details-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.date, .time, .questions, .correct, .percentage, .status {
+    margin: 0;
+    font-size: 20px;
+}
+
+/* Correct info container styles */
+.correct-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentage-square {
+    width: 162.5px;
+    height: 97px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.percentage-square p {
+    color: #FFF;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: 48px; /* 200% */
+    letter-spacing: -0.192px;
+    text-transform: capitalize;
+}
+
+.percentage-100-65 {
+    background-color: #0F7820; /* Green */
+}
+
+.percentage-64-45 {
+    background-color: #B9C718; /* Yellow */
+}
+
+.percentage-44-0 {
+    background-color: #F00; /* Red */
+}
+/* Details button styles */
+.details-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: #888; /* Light gray text color */
+    transition: background-color 0.3s, border-radius 0.3s;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px; /* Adjust size as needed */
+    height: 50px; /* Adjust size as needed */
+    border-radius: 50%; /* Circular shape */
+}
+
+.details-btn:hover {
+    background-color: rgba(128, 128, 128, 0.2); /* Light gray background color */
+}

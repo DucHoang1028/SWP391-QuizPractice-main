@@ -1,0 +1,335 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.marketing-sidebar
+{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 78px;
+    background: #11101D;
+    padding: 6px 14px;
+    z-index: 99;
+    transition: all 0.5s ease;
+}
+
+.marketing-sidebar.open
+{
+    width: 250px;
+}
+
+.marketing-sidebar .marketing-sidebar-logo
+{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.marketing-sidebar .marketing-sidebar-logo .marketing-sidebar-logo-icon
+{
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.marketing-sidebar-logo-icon
+{
+    padding-top: 10px;
+}
+
+.marketing-sidebar .marketing-sidebar-logo .marketing-sidebar-logo-name
+{
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+
+.marketing-sidebar.open .marketing-sidebar-logo .marketing-sidebar-logo-icon,
+.marketing-sidebar.open .marketing-sidebar-logo-name
+{
+    opacity: 1;
+}
+
+.marketing-sidebar-logo a
+{
+    display: flex;
+    text-decoration: none;
+    width: 50px;
+}
+
+.marketing-sidebar-logo-name
+{
+    padding-left: 5px;
+    padding-top: 20px;
+}
+
+.marketing-sidebar .marketing-sidebar-logo #marketing-btn
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    font-size: 22px;
+    transition: all 0.4s ease;
+    font-size: 23px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.marketing-sidebar.open .marketing-sidebar-logo #marketing-btn
+{
+    text-align: right;
+}
+
+.marketing-sidebar i
+{
+    color: #fff;
+    height: 60px;
+    min-width: 50px;
+    font-size: 28px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.marketing-sidebar .marketing-sidebar-navlist
+{
+    margin-top: 20px;
+    height: 100%;
+}
+
+.marketing-sidebar li
+{
+    position: relative;
+    margin: 8px 0;
+    list-style: none;
+}
+
+.marketing-sidebar li .marketing-tooltip
+{
+    position: absolute;
+    top: -20px;
+    left: calc(100% + 15px);
+    z-index: 3;
+    background: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    font-weight: 400;
+    opacity: 0;
+    white-space: nowrap;
+    pointer-events: none;
+    transition: 0s;
+}
+
+.marketing-sidebar li:hover .marketing-tooltip
+{
+    opacity: 1;
+    pointer-events: auto;
+    transition: all 0.4s ease;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.marketing-sidebar.open li .marketing-tooltip
+{
+    display: none;
+}
+
+.marketing-sidebar li a
+{
+    display: flex;
+    height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    align-items: center;
+    text-decoration: none;
+    transition: all 0.4s ease;
+    background: #11101D;
+}
+
+.marketing-sidebar li a:hover
+{
+    background: #FFF;
+    cursor: pointer;
+}
+
+.marketing-sidebar li a .marketing-links_name
+{
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.4s;
+}
+
+.marketing-sidebar.open li a .marketing-links_name
+{
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.marketing-sidebar li a:hover .marketing-links_name,
+.marketing-sidebar li a:hover i{
+    transition: all 0.5s ease;
+    color: #11101D;
+}
+
+.marketing-sidebar li i
+{
+    padding-top: 5px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 18px;
+    border-radius: 12px;
+}
+
+.marketing-sidebar li a:hover .marketing-links_name,
+.marketing-sidebar li a:hover path{
+    fill:#000000;
+}
+
+
+.marketing-sidebar li.dashboard-profile
+{
+    position: fixed;
+    height: 60px;
+    width: 78px;
+    left: 0;
+    bottom: -8px;
+    padding: 10px 14px;
+    background: #1d1b31;
+    transition: all 0.5s ease;
+    overflow: hidden;
+}
+
+.marketing-sidebar.open li.dashboard-profile
+{
+    width: 250px;
+}
+
+.marketing-sidebar li .dashboard-profile-profile-details
+{
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.marketing-sidebar li img
+{
+    height: 45px;
+    width: 45px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-right: 10px;
+}
+
+.marketing-sidebar li.dashboard-profile .name,
+.marketing-sidebar li.dashboard-profile .job
+{
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    white-space: nowrap;
+}
+
+.marketing-sidebar li.dashboard-profile .job
+{
+    font-size: 12px;
+}
+
+.marketing-sidebar .dashboard-profile #log_out
+{
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    background: #1d1b31;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    border-radius: 0px;
+    transition: all 0.5s ease;
+}
+
+.marketing-sidebar.open .dashboard-profile #log_out
+{
+    width: 50px;
+    background: none;
+}
+
+@media (max-width: 420px)
+{
+    .marketing-sidebar li .marketing-tooltip{
+        display: none;
+    }
+}
+
+.profile-svg
+{
+    width: 20px;
+}
+
+.dashboard-svg
+{
+    padding-top: 8px;
+}
+
+.selected svg path
+{
+    fill: black;
+}
+
+.selected i
+{
+    background-color: white;
+}
+
+.selected a
+{
+    color: black;
+    background: white;
+}
+
+.selected span
+{
+    color: black;
+}
+
+.selected a .marketing-links_name,
+.selected a i{
+    transition: all 0.5s ease;
+    color: #11101D;
+}
+
+.selected li a
+{
+    background: #ffffff;
+    cursor: pointer;
+}
+
+.selected span
+{
+    color: black;
+}
+
+.selected li a .marketing-links_name,
+.selected li a i{
+    transition: all 0.5s ease;
+    color: #11101D;
+}   
+
+#log_out:hover path
+{
+    fill: #ffffff;
+}

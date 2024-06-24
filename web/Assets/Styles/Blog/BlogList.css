@@ -1,0 +1,270 @@
+/* Main container styling */
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Content area styling */
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+/* Blog list styling */
+.blog-list {
+    margin-bottom: 20px;
+}
+
+.blog-item {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.blog-item:hover {
+    background-color: #f0f0f0;
+}
+
+.blog-item .thumbnail {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 20px;
+}
+
+.blog-link {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    color: inherit;
+}
+
+.blog-item .blog-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+.blog-item .blog-info h3 {
+    margin: 0 0 5px;
+    color: blue;
+    font-size: 24px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.blog-item .blog-info .summary {
+    margin: 5px 0;
+    order: 1;
+}
+
+.blog-item .blog-info .category {
+    margin: 5px 0;
+    font-weight: bold;
+    color: blue;
+    font-size: 18px;
+    order: 2;
+}
+
+.blog-item .blog-info .last-updated {
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: darkorange;
+    font-weight: bold;
+}
+
+.blog-item .blog-info .tagline {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+    align-self: flex-end;
+}
+
+/* Latest posts styling */
+.latest-posts {
+    margin-top: 20px;
+}
+
+.latest-posts h3 {
+    margin-bottom: 10px;
+}
+
+.latest-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+.latest-item:hover {
+    background-color: #f0f0f0;
+}
+
+.latest-item .thumbnail {
+    width: 60px; /* Change this to fit your needs */
+    height: 60px; /* Change this to fit your needs */
+    background-color: #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    background-size: cover;
+    background-position: center;
+}
+
+.latest-item .post-info {
+    flex-grow: 1;
+}
+
+.latest-item .post-info h4 {
+    margin: 0 0 5px;
+    font-size: 16px;
+}
+
+.latest-item .brief-info {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+/* Sort by section styling */
+.sort-by {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-by label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sort-by select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.sort-by select:hover {
+    background: #ffeee8;
+}
+
+/* Removing blue underline from links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.register-btn {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 15px;
+    background-color: #ff6636;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.register-btn:hover {
+    background-color: #ff4436;
+}
+
+.search-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-message {
+    flex: 1;
+}
+
+.results-count {
+    color: blue;
+    font-weight: bold;
+    text-align: right;
+}
+/* Categories section */
+.category-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 180px; /* Adjust height to show 3 rows (3 * 60px) */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.category-list.expanded {
+    max-height: none; /* Remove height restriction when expanded */
+}
+
+.category-column {
+    flex: 1 1 calc(50% - 10px); /* Two columns layout */
+    display: flex;
+    align-items: center;
+    height: 60px; /* Adjust height */
+}
+
+.toggle-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.toggle-button .arrow {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.toggle-button:hover {
+    color: #0056b3;
+}
+
+.enter-category-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6636;
+    color: #fff;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.enter-category-btn:hover {
+    background-color: #ff4436;
+}

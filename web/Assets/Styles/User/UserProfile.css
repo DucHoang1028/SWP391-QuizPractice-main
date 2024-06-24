@@ -1,0 +1,233 @@
+/*style for popup position*/
+.main-component-profile
+{
+    z-index: 200;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0,0,0,0.3);
+}
+
+/* Change to flex when visible */
+.main-component-profile.show
+{
+    display: flex;
+}
+
+/*style for popup frame*/
+.profile
+{
+    width: 660px;
+    height: 330px;
+    flex-shrink: 0;
+    background:#FAFAFA;
+    border-radius: 18px;
+    box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    position: relative;
+}
+
+/*style for profile close button*/
+.close_button-profile
+{
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 15px;
+}
+
+.close_button-profile:hover
+{
+    height: min-content;
+    display: flex;
+    justify-content: center;
+    align-items:  center;
+    border-radius: 8px;
+    background: #ebe8e8;
+    cursor: pointer;
+}
+
+/*style for content of popup*/
+.profile-content
+{
+    display: flex;
+    padding: 30px;
+}
+
+/*style for avatar of profile*/
+.profile-icon
+{
+    width: 40%;
+}
+
+.frame
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-preview
+{
+    width: 220px;
+    height: 220px;
+    border: 2px solid #ddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    overflow: hidden;
+}
+
+.image-preview img
+{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*style for image upload button*/
+.image-upload-input
+{
+    display: none;
+}
+
+.image-upload-label
+{
+    height: 39px;
+    padding: 10px 20px;
+    background-color: #ff5f00;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 12.800000190734863px;
+}
+
+/*style for more information of user*/
+.details
+{
+    width: 60%;
+    margin-left: 20px;
+}
+
+.details-part
+{
+    position: relative;
+    margin: 20px 0;
+    width: 100%;
+}
+
+.details-label
+{
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #fff;
+    padding: 0 5px;
+    font-size: 12px;
+    color: #666;
+}
+
+.details-input
+{
+    width: 95%;
+    height: 33px;
+    padding: 10px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s;
+    padding-top:15px;
+    padding-bottom: 15px;
+}
+
+.gender
+{
+    position: relative;
+}
+
+.gender input
+{
+    margin-top: 10px;
+}
+
+.gender-label
+{
+    position: absolute;
+    top: -15px;
+}
+
+.male
+{
+    margin-right: 10px;
+}
+
+.email
+{
+    cursor: not-allowed;
+    color: grey;
+}
+
+/*style for error message*/
+#message-profile
+{
+    position: absolute;
+    margin-left: 170px;
+    margin-top: 17px;
+    width: 190px;
+    color:red;
+}
+
+/*style for submit button*/
+.submit_button-profile
+{
+    margin-top: 3px;
+    cursor: pointer;
+    width: 150px;
+    background: #ff5f00;
+    border-radius: 5px;
+    height: 39px;
+    color: white;
+    font-weight: 700;
+    font-size: 12.800000190734863px;
+    border:none;
+}
+
+/*style for loader*/
+.process-modal-profile
+{
+    position: fixed;
+    display: none   ;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(168 163 163 / 20%);
+}
+
+.loader-profile
+{
+    width: 50px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 8px solid;
+    border-color: #000 #0000;
+    animation: l1 1s infinite;
+}
+
+@keyframes l1
+{
+    to
+    {
+        transform: rotate(.5turn)
+    }
+}
+

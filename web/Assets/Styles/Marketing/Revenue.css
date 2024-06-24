@@ -1,0 +1,76 @@
+.revenue-popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+.revenue-popup-content {
+    background-color: white;
+    margin: 5% auto;
+    padding: 50px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 1000px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    border-radius: 23px;
+}
+
+.revenue-close {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+thead {
+    color: grey;
+    /*background-color: #f2f2f2;*/
+}
+
+.revenue-dropdown {
+    margin-top: 10px;
+}
+
+.revenue-dropdown label {
+    margin-right: 10px;
+}
+
+.revenue-dropdown select
+{
+    width: 150px;
+    height: 50px;
+    border-width: 0px;
+    border-color: grey;
+    border-radius: 10px;
+    box-shadow:0 5px 15px rgba(0, 0, 0, 0.25);
+    font-size: 17px;
+    font-weight: 100;
+}
+
+.dashboard-popup
+{
+    max-height: 373.5px;
+    overflow-y: auto;
+}

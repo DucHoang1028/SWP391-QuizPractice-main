@@ -1,0 +1,227 @@
+.main
+{
+
+}
+.navigation
+{
+    background: #1D2026;
+}
+.navigation__menu
+{
+    display: flex;
+    width: 100vw;
+    padding:0 32px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+
+}
+.navigation__menu-item
+{
+    color: var(--Gray-White, #FFF);
+    font-family: sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: -0.14px;
+    padding: 16px;
+    text-decoration: none;
+
+}
+.selected
+{
+    text-decoration: none;
+
+    box-shadow: 0px 3px 0px #FF6636 inset;
+    background:#1D2026;
+}
+.navigation__menu-item:hover
+{
+    cursor: pointer;
+    background: #FF6636;
+}
+a
+{
+    text-decoration: none;
+}
+.header
+{
+    display: flex;
+    width: 100%;
+    padding: 20px 32px;
+    justify-content: space-between;
+    align-items: center;
+    background: #FFF;
+    box-shadow: 0px -1px 0px 0px #E9EAF0 inset;
+    margin-bottom: 20px;
+}
+.header__left-logo
+{
+    display:flex;
+    align-items: center;
+}
+.header__left-logo:hover
+{
+    cursor: pointer;
+}
+.header__left-logo img
+{
+    margin-right: 8px;
+    width: 40px;
+    height: 40px;
+}
+.header__left-title
+{
+    color: #1D2026;
+    font-family: sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 124%;
+    letter-spacing: -0.96px;
+}
+.header__right
+{
+    display:flex;
+}
+.header__right-register
+{
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: #FFEEE8;
+    color: #FF6636;
+    font-family: sans-serif;
+    font-size: 16px; 
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.128px;
+    text-transform: capitalize;
+    margin-right: 12px;
+}
+.header__right-login
+{
+    color: var(--Gray-White, #FFF);
+    font-family: sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: -0.128px;
+    text-transform: capitalize;
+    display: flex;
+    padding: 0px 24px;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    background: var(--Primary-500, #FF6636);
+}
+.header__right-register:hover
+{
+    cursor:pointer;
+    background: #ffdcd0;
+}
+.header__right-login:hover
+{
+    cursor:pointer;
+    background: #ff845e;
+}
+.header__right-userprofile img {
+    border-radius: 50%;
+    width:48px;
+    height:48px;
+    object-fit: cover;
+}
+.header__right-userprofile img:hover
+{
+    cursor: pointer;
+}
+.header__right-menu
+{
+    box-sizing: border-box;
+    background: #FFF;
+    position: absolute;
+    top: 130px;
+    right: -10px;
+    padding: 10px 20px;
+    background: #fff;
+    width: 250px;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    transition: 0.5s;
+    visibility: visible;
+    opacity: 1;
+    z-index: 100;
+    margin-right: 31px;
+    display: none;
+}
+
+.header__right-menu::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    right: 28px;
+    width: 20px;
+    height: 20px;
+    background: #fff;
+    transform: rotate(45deg);
+}
+.header__right-menu h3 {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 0;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.5em;
+}
+
+.header__right-menu h3 span {
+    font-size: 14px;
+    color: #cecece;
+    font-weight: 300;
+}
+.header__right-menu ul
+{
+    margin-left: 0px;
+    padding-left: 2px;
+
+}
+.header__right-menu ul li {
+    list-style: none;
+    padding: 16px 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+.header__right-menu ul li img {
+    max-width: 20px;
+    margin-right: 10px;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.header__right-menu ul li:hover img {
+    opacity: 1;
+}
+
+.header__right-menu ul li a {
+    display: inline-block;
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+.profile-button:hover {
+    cursor: pointer;
+}
+
+.changepassword-button:hover{
+    cursor: pointer;
+}

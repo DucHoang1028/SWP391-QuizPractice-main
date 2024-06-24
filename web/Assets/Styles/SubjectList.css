@@ -1,0 +1,235 @@
+
+main {
+    display: flex;
+    flex: 1;
+    padding: 20px;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.content {
+    flex: 3;
+    margin-right: 20px;
+}
+
+.search-message {
+    color: #2806be;
+    font-style: italic;
+    text-align: right;
+}
+
+.subject-list {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px;
+    border-top: 1px solid #ddd;
+}
+
+.subject-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    transition: ease-in-out 300ms;
+}
+
+.subject-item a, .subject-item a:-webkit-any-link {
+    text-decoration: none;
+}
+
+.subject-description{
+    display: block;
+}
+
+.subject-item:hover, .featured-item:hover{
+    background: #eee;
+}
+
+.subject-item .thumbnail {
+    width: 200px;
+    height: 200px;
+    background-color: #ccc;
+    margin-right: 20px;
+    background-size: cover;
+}
+
+.subject-item .subject-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #333;
+}
+
+.subject-item .subject-info h3 {
+    margin: 0 0 5px 0;
+}
+
+.category {
+    margin: 0 0 10px 0;
+    font-weight: bold;
+    color: #2806be;
+}
+
+.category-list {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    max-height: 200px; /* Limit to 4 rows of 60px height each */
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+.category-list.expanded {
+    max-height: none; /* Remove height restriction when expanded */
+}
+.category-column {
+    flex: 1 1 calc(50% - 10px); /* Adjust width to fit two columns */
+    display: flex;
+    align-items: center;
+    height: 60px; /* Adjust height to limit rows */
+}
+
+.toggle-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.toggle-button {
+    margin-top: 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    color: #007bff;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+}
+.toggle-button .arrow {
+    font-size: 18px;
+    margin-left: 5px;
+}
+.toggle-button:hover {
+    color: #0056b3;
+}
+
+.subject-item .subject-info .price {
+    margin: 0 0 10px 0;
+}
+
+.subject-item .subject-info .price .original-price {
+    text-decoration: line-through;
+    margin-right: 10px;
+    color: #888;
+}
+
+.register-btn {
+    display: inline-block;
+    width: 200px;
+    padding: 10px 15px;
+    background-color: #ff6636;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+.register-btn:hover {
+    background-color: #ff4436;
+}
+
+.subject-item .subject-info .tagline {
+    margin: 0;
+    font-style: italic;
+    color: #555;
+    align-self: flex-end;
+}
+
+.featured-tick{
+    background: #4ec61b;
+    color: white;
+    border-radius: 100%;
+    padding: 2px 6px;
+}
+
+.featured-subjects {
+    margin-top: 20px;
+}
+
+.featured-subjects h3 {
+    margin-bottom: 10px;
+}
+
+.featured-subjects ul {
+    list-style: none;
+    padding: 0;
+}
+
+.featured-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    transition: ease-in-out 300ms;
+}
+
+.featured-item .thumbnail {
+    width: 60px;
+    height: 60px;
+    background-color: #ddd;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.featured-item .subject-info {
+    flex-grow: 1;
+}
+
+.featured-item .subject-info h4 {
+    margin: 0 0 5px 0;
+    font-size: 16px;
+}
+
+.featured-item .tagline {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}
+
+.sort-by {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.sort-by label {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.sort-by select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.last-updated{
+    text-decoration: none;
+    text-align: right;
+    font-style: italic;
+    font-size: small;
+    color: #ff6636;
+}
+
+.subject-register-component
+{
+    display: none;
+}
+
